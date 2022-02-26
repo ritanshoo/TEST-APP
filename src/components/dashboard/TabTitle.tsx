@@ -1,4 +1,4 @@
-import React, {useCallback, useState} from "react"
+import React, {useCallback} from "react"
 
 type Props = {
   title: string
@@ -8,12 +8,8 @@ type Props = {
 
 const TabTitle: React.FC<Props> = ({ title, setSelectedTab, index }) => {
 
-  const [titles,setTitles]=useState('');
-
   const onClick = useCallback(() => {
     setSelectedTab(index)
-      setTitles(title)
-    console.log(title)
   }, [setSelectedTab, index])
 
   return (

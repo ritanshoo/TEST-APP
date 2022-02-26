@@ -8,7 +8,6 @@ type Props = {
 const Tabs: React.FC<Props> = ({ children }) => {
   const [selectedTab, setSelectedTab] = useState(0)
 
-
   return (
     <>
       <ul>

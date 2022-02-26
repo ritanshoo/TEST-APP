@@ -11,7 +11,6 @@ import TagIcon from './../../media/icons/tag.svg'
 import Tabs from '../../components/dashboard/Tabs';
 import Tab from '../../components/dashboard/Tab';
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
 import Modal from 'react-modal';
 import React from 'react';
 import CloseIcon from './../../media/icons/close.svg'
@@ -37,11 +36,7 @@ const Dashboard = () => {
      function closeOfferModal(){ setOfferIsOpen(false) }
      function closeRejectModal(){ setRejectIsOpen(false) }
      function closeModal() { setIsOpen(false) }
-      let [tittle,setTitle]=useState(true)
-     const handleClick=()=>{
-          console.log("handleclick")
-         setTitle(!tittle)
-     }
+
      return (
           <div className="page-wrapper">
                <AppBar position="static" className="page-header">
@@ -72,9 +67,9 @@ const Dashboard = () => {
                                    <h4>Johndoe.near</h4>
                               </div>
                          </div>
-                         <div className="dashboard-tabs" onClick={handleClick}>
+                         <div className="dashboard-tabs">
                               <Tabs>
-                                   <Tab  title="Info">
+                                   <Tab title="Info">
                                         <div className="tabs-content-section">
                                              <h4>Overview</h4>
                                              <p>digital ninjas are a collection of 1000 unique collectibles on the NEAR blockchain that serve to honor and preserve art.</p>
