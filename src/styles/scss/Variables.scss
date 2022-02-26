@@ -1,0 +1,47 @@
+$Theme-white: #fff !important;
+$Theme-dark: #000 !important;
+$Background1: #f5f5f5;
+$Border-color: #dfdfe0;
+$Active-Border: #bebec2;
+$Theme-Primary: #885fff !important;
+$FormField-background: #fcfcfc !important;
+$Heading: #6f6e73 !important;
+$Heading2: #0f2035 !important;
+$HeadingActive: #414047 !important;
+$LightButton: #bebec2 !important;
+$ActiveLink: #587be0 !important;
+$LabelColor: #808080 !important;
+
+@mixin FontSmall {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+@mixin FontMedium {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.154px;
+}
+
+@mixin LargeButtonFont {
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: -0.408px !important;
+}
+
+@mixin buttonTranpsarent {
+  background-color: transparent !important;
+  border: none;
+}
+
+@mixin FlexAllCenter {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+}
